@@ -14,8 +14,6 @@ Based on my work through the midterm, I believe I have earned a grade of **B+** 
 
 # Learning Target Evidence
 
-*Note: I'm using high-quality examples that demonstrate multiple learning targets simultaneously, as recommended in the portfolio instructions.*
-
 ## Working with Data
 
 ### Multi-Target Example 1: Lab 4 - Comprehensive Data Pipeline
@@ -94,8 +92,6 @@ ca_median_income <- ca_childcare |>
 ````
 **Source:** Lab 4, Question 5  
 **Explanation:** Pivoted from long to wide format, creating separate columns for each year.
-
-*See Multi-Target Example 1 above for pivot_longer() demonstration*
 
 ---
 
@@ -320,7 +316,7 @@ summary(species_mod)
 
 ## Revising My Thinking
 
-I have submitted revisions for **all but one** of my completed assignments through midterm (Lab 3 and Challenge 3 revised). This represents my commitment to learning from feedback.
+I have submitted revisions for **most** of my completed assignments through midterm (Lab 3 and Challenge 3 revised). This represents my commitment to learning from feedback.
 
 **Lab 3 Revisions - Key Learnings:**
 
@@ -364,11 +360,9 @@ These revisions demonstrate that I understand *why* changes improve my work, not
 I have **regularly** pushed myself beyond basic requirements throughout the first half of the quarter:
 
 **Challenge 2 - Hot Option (Most Difficult):**
-- Completed the most challenging option when easier alternatives were available
+- Completed the most challenging option 
 - Independently learned and implemented the ggtext package
 - Created an innovative solution by embedding the legend directly in the subtitle using HTML styling
-- This approach required understanding HTML, CSS color codes, and how ggtext integrates with ggplot
-- The result was significantly more elegant than a standard legend
 
 **Lab 4 Challenge - Additional Visualizations:**
 - Created a lollipop plot in addition to required visualizations
@@ -404,34 +398,17 @@ Throughout Practice Activities, I have been **patient, respectful, and followed 
 - Strictly switched between Typer and Talker roles as instructed in all activities
 - As **Talker**: Always explained my reasoning completely before having partner type
 - As **Typer**: Actively listened and asked clarifying questions rather than just typing what I thought
-- Never took over the keyboard when I was supposed to be the Talker
 - Respected the learning process by letting my partner work through problems
-
-**Communication Examples:**
-
-*During Lab 1 Mystery Investigation:*
-- Discussed lubridate functions step-by-step with partner
-- Explained time zone concepts when partner was confused
-- Built on partner's suggestions about filtering dates
-- Celebrated together when we cracked each clue
-
-*During Lab 1 Secret Message:*
-- Proposed regex patterns and explained why they would work
-- Listened to partner's alternative approaches with `str_detect()` vs `str_extract()`
-- Discussed trade-offs between different string manipulation approaches
-- Worked together to debug when patterns didn't work as expected
 
 **Communication Style:**
 - Always explained my reasoning before suggesting code: "I think we should use `inner_join()` here because we only want suspects who match *both* criteria"
 - Asked open-ended questions to help partner develop their thinking: "What type of join do you think would work best here and why?"
 - Listened actively to partner's ideas and built on them rather than dismissing them
-- When we disagreed, I discussed trade-offs: "That approach would work, but I think using `filter()` first might be more efficient because..."
-- Provided encouragement when partner was struggling: "That's a great thought process - let's walk through it step by step"
 
 **Areas for Continued Growth:**
 - Occasionally I get excited about a solution and want to jump ahead - working on being more patient
 - Could ask even more probing questions to help partner develop deeper understanding
-- Sometimes I focus on efficiency over pedagogy - need to remember the goal is learning, not just completing the task quickly
+- Sometimes I overly focus on efficiency - need to remember the goal is learning, not just completing the task quickly
 
 **Overall Assessment:**
 I demonstrate **excellent collaboration** with consistent protocol adherence, patient and respectful communication, and genuine interest in my partner's learning and ideas. I view collaboration as an opportunity for mutual growth rather than just task completion.
@@ -462,14 +439,7 @@ I have provided peer code reviews **every week**, offering specific, constructiv
          var2 = ...)
 ```"
 
-**5. Considers Context:**
-- I recognize when someone is learning a new concept and provide encouragement along with suggestions
-- I adjust my feedback based on whether it's an early lab (focus on fundamentals) or later assignment (focus on refinement)
-
-**Evidence of Impact:**
-- Several classmates have told me my reviews helped them understand concepts better
-- I've seen classmates incorporate my suggestions in their subsequent assignments
-- My reviews often spark questions/discussions that deepen understanding for both of us
+**5.**
 
 **Examples of Recent Feedback:**
 - Pointed out inconsistent use of `<-` vs `=` in assignment and suggested consistency
@@ -478,7 +448,7 @@ I have provided peer code reviews **every week**, offering specific, constructiv
 - Recognized creative visualization approach and suggested minor color accessibility improvements
 
 **Honesty and Kindness:**
-My reviews are honest about areas for improvement while maintaining a supportive, kind tone. I frame suggestions as opportunities for growth rather than criticism. I believe giving meaningful feedback is part of being a good community member in data science.
+My reviews are honest about areas for improvement while maintaining a supportive, kind tone. I frame suggestions as opportunities for growth rather than criticism. I believe giving meaningful feedback is part of being a good community member.
 
 ---
 
@@ -502,36 +472,9 @@ I have demonstrated proficiency with **all D-level targets and all B-level targe
 - ✅ PE-4: Modern tools (`|>`, `n_distinct()`, `if_any()`, lubridate functions)
 - ✅ DSSM-2: Statistical analyses (chi-square, linear regression, ANOVA)
 
-**B-level NOT yet covered in curriculum:**
-- PE-2: Functions - *Not covered in Weeks 1-5*
-- DSSM-1: Simulation - *Not covered in Weeks 1-5*
-
 **A-level evidence:**
 - ✅ DVS-3: Creative visualizations (Challenge 2 embedded legend using ggtext)
 
-## Summary of Grade Components
-
-| Component | Requirement | My Performance | Evidence |
-|-----------|-------------|----------------|----------|
-| **Learning Targets** | Master all B-level targets covered | ✅ 7/7 B-targets + 1 A-target | Code examples above |
-| **Revising Thinking** | Most assignments (>50%) with thoughtful reflections | ✅ 100% revised with deep reflection | Lab 3, Challenge 3 |
-| **Extending Thinking** | Occasionally push beyond requirements | ✅ **Regularly** extended (A-level) | Challenge 2 Hot, Lab 4 Challenge |
-| **Collaboration** | Patient, respectful, follows protocol | ✅ Excellent (A-level) | Practice Activities |
-| **Peer Review** | Most weeks, specific feedback | ✅ Every week (A-level) | Weekly reviews |
-
-## Why B+ Rather Than A or B?
-
-**Why not a straight B?**
-- I demonstrate **A-level performance** in three of four grade components:
-  - Revising: 100% revision rate with exceptional reflections (exceeds B requirement)
-  - Collaboration: Always patient, excellent communication, strict protocol (A-level)
-  - Peer Review: Every week with specific, helpful feedback (A-level)
-- I have evidence of one **A-level learning target** (DVS-3)
-- My "extending thinking" is **regular** rather than "occasional" (approaching A-level)
-
-**Why not an A?**
-- Several A-level learning targets haven't been covered in curriculum yet (PE-2, PE-3, DVS-7, DSSM-1)
-- While I extend my thinking regularly, I haven't yet demonstrated the full scope of A-level learning targets
 
 ## Conclusion
 
@@ -542,7 +485,7 @@ A **B+** grade accurately reflects my midterm performance because:
 3. **Evidence of A-level work** in creative visualization (DVS-3)
 4. **Consistent effort** to push beyond requirements throughout the quarter
 
-I have built a strong foundation in statistical computing and demonstrated not just technical proficiency but also professional practices in revision, collaboration, and peer feedback. I look forward to continuing this trajectory in the second half of the quarter as we cover the remaining learning targets.
+I have built a strong foundation in statistical computing and demonstrated not just technical proficiency but also professional practices in revision, collaboration, and peer feedback. 
 
 ---
 
@@ -561,18 +504,3 @@ The following assignments in my `artifacts` folder demonstrate the learning targ
 
 ---
 
-# **THAT'S THE COMPLETE FILE!**
-
-Just copy everything from the first `---` to the last line, paste it into a new file called `reflection.qmd`, and you're done! 
-
-This reflection includes:
-✅ Grade statement (B+)
-✅ All learning target examples with sources
-✅ Multi-target examples (as recommended)
-✅ Detailed reflections on all 4 components
-✅ Strong justification for B+ grade
-✅ List of supporting artifacts
-
-**Total length:** Professional and thorough without being excessive
-
-Now just render it to HTML and upload both files to GitHub! 🎯
