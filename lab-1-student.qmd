@@ -1,0 +1,126 @@
+---
+title: "Lab 1: Introduction to Quarto"
+author: "Marietta Nikolskaya"
+date: "09/18/25"
+format: 
+  html:
+    toc: true           
+    theme: cosmo        
+    code-fold: true     
+    code-tools: true     
+editor: source
+embed-resources: true
+echo: true 
+warning: false
+---
+
+# Exploring Quarto Documents
+
+## Specifying Global Execute Options
+
+Execution options specify how the R code in your Quarto document should be
+displayed. This [guide](https://quarto.org/docs/computations/execution-options.html)
+provides descriptions on the options you can specify in a document's execution.
+
+**Question 1** -- Add your name and the date to the YAML. 
+
+**Question 2** -- Add an `execute` line to your YAML that includes the following
+options, (1) your source code is always output on the page, and (2) your
+document will render even if there are errors.
+
+## Running the Provided Code
+
+#Tooth Growth Dataset
+```{r}
+#| echo: true
+#| label: practicing-running-code
+
+# Load a dataset into the R Environment.
+data(ToothGrowth)
+
+# Look at the summary of the variables in the dataset.
+summary(ToothGrowth)
+
+```
+
+**Question 3** -- Let's spice this code up a bit. Delete `1 + 1` from the code
+chunk and paste in the code provided in the Lab 1 instructions. 
+
+## Check the Data Documentation
+
+**Question 4** -- In your **console** (*not* in the Quarto document), type
+`?ToothGrowth` (or alternatively `help(ToothGrowth)`. Use the information that
+pops up in the *Help* pane in RStudio to fill in the blanks below. 
+
+*This dataset investigates the effect of vitamin C on tooth growth in Guinea Pigs.*
+
+*The two supplement delivery methods include OJ or ascorbic acid (a form of vitamin C and coded as VC) and VC (0.5, 1, 2).*
+
+*`ToothGrowth` is a data frame with 60 observations and 3 variables.*
+
+**Question 5** -- *Before* the code chunk, change the "Running the Provided
+Code" section header to a header that better describes the contents of this
+section (e.g., Tooth Growth Dataset).
+
+## Creating a Plot
+
+**Question 6** -- Replace the `plot(pressure)` code with the code provided in the Lab 1 instructions.
+
+```{r}
+#| echo: true
+#| label: creating-a-plot
+#| layout-ncol: 2
+#| fig-cap: ["Tooth length by supplement type", "Tooth length by supplement dose"]
+#| fig-align: "center"
+
+library(tidyverse)
+
+ggplot(data = ToothGrowth, 
+       mapping = aes(x = supp, y = len)) +
+  geom_boxplot() +
+  labs(x = "Supplement", y = "Length of Teeth (mm)")
+
+ToothGrowth %>% 
+  mutate(dose = as.factor(dose)) %>% 
+  ggplot(mapping = aes(x = dose, y = len)) +
+  geom_boxplot() +
+  labs(x = "Dose of Supplement (mg/day)", y = "Length of Teeth (mm)")
+```
+
+Now, run this code chunk! You should see two side-by-side boxplots, one plot
+comparing tooth length between the two supplement delivery methods and one plot
+comparing tooth length between the three different dosages uses. 
+
+**Question 7** -- Read over the [Quarto documentation on figure options](https://quarto.org/docs/authoring/figures.html#computations)
+and add an option (`#|`) to the above code chunk to make the figures print
+side-by-side (i.e., in one row) in the rendered HTML file. 
+
+**Question 8** -- Specify in the code chunk options that these boxplots 
+should be **center aligned** (also found in the Quarto documentation).
+
+**Question 9** -- Specify a **figure caption** for the boxplots (using a
+code-chunk option). This is a bit tricky! There are two plots, so you will need
+to figure out how to specify a different caption for each plot. 
+
+```{r}
+t.test(len ~ supp, 
+       data = ToothGrowth,
+       var.equal = FALSE, 
+       alternative = "two.sided"
+       )
+
+
+```
+
+### Question 12
+
+1) p value is greater than 0.05 which means that we fail to reject the null hypothesis. In other words, there is not enough statistical evidence to conclude that the mean tooth length differs between the OJ and VC supplement.
+2) we are 95% confident that the true difference in mean tooth length between OJ and VC is between -.17mm and 7.57mm. 
+
+### Question 13
+
+In this section we used a Welch Two Sample t-test to compare mean tooth length between guinea pigs who either recieved orange juice (OJ) or vitamin C (VC). The test looks at unequal variance and concludes that there is not enough statistical evidence to suggest that the mean tooth length differs between OJ and VC. 
+
+
+
+
