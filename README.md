@@ -1,7 +1,7 @@
 # STAT 331 Midterm Portfolio
 **Student:** Marietta Nikolskaya  
 **Course:** STAT 331 - Statistical Computing with R  
-**Quarter:** Fall 2024
+**Quarter:** Fall 2025
 
 ## Portfolio Contents
 
