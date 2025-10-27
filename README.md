@@ -40,6 +40,6 @@ I am requesting a grade of **B+** at midterm.
 - Consistent effort to extend thinking beyond requirements
 
 ### Repository Link
-https://github.com/yourusername/STAT331-Midterm-Portfolio
+https://github.com/marynikolskaya/STAT331-Midterm-Portfolio
 
 ---
